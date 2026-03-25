@@ -91,8 +91,7 @@
         [cell.contentView addSubview:iconView];
     }
     
-    NSString *bundleID = self.appBundles[indexPath.row];
-    UIImageView *iconView = (UIImageView *)[cell.contentView viewWithTag:100];
+    // cellForRowAtIndexPath 里仅用于创建/刷新 cell 视图；bundleID/iconView 未实际使用，避免 -Wunused-variable
     
     // 【难点复刻】通过 SpringBoard 的底层方法获取系统级原始图标
     // 现代 Theos 开发者常常卡在这里，原作者通过特定的 API 拿到了高清图标
