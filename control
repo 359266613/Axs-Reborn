@@ -1,0 +1,9 @@
+Package: com.axs.axsreborn
+Name: Axs-Reborn
+Depends: mobilesubstrate, preferenceloader
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Axs 专属定制 - 工业级模块化复刻
+Author: Axs
+Maintainer: Axs
+Section: Tweaks
