@@ -1,6 +1,18 @@
 // ==========================================
 // 边缘发光特效 / 跑马灯
 // ==========================================
+
+// 该 Hook 直接使用 UIWindow/CALayer/UIColor/CABasicAnimation/dispatch/NSString 等类型，
+// 需要在此处显式引入对应头文件，避免在 -Werror 下因声明缺失导致编译失败。
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import <dispatch/dispatch.h>
+#import <dispatch/time.h>
+#import <math.h>
+
+#import "AxsManager.h"
+
 @interface SBCoverSheetWindow : UIWindow
 @end
 
